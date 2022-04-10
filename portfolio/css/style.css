@@ -1,50 +1,84 @@
-body {
-  font-family: "Courier New", Courier, monospace;
+/* 구글폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Hi+Melody&family=Noto+Serif+KR:wght@500&family=Poppins:wght@400;500;600;700&family=Stylish&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
   margin: 0;
-  font-weight: bold;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-header {
-  /* background-color: slategray; */
-  background-color: slategray;
-}
-
-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.logo {
-  float: left;
-  width: 60px;
-  height: 60px;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  margin-top: 10px;
-}
-nav a {
-  color: aliceblue;
+  padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-nav a:hover {
-  color: slategray;
-  border-top: 5px slategray solid;
-  padding-top: 20px;
+.home .about .kills .my-site .contact {
+  padding-top: 86px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.about .skills .my-site .contact,
+.footer {
+  font-family: "Poppins", sans-serif;
+}
+
+.about .title,
+.skills .title,
+.my-site .title,
+.contact .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 30px 0 100px 0;
+  padding-bottom: 8px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.about .title::before,
+.skills .title::before,
+.my-site .title::before,
+.contact .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 160px;
+  height: 3px;
+  background-color: black;
+  transform: translateX(-50%);
+}
+
+.about .title::after,
+.skills .title::after,
+.my-site .title::after,
+.contact .title::after {
+  content: "";
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  font-size: 20px;
+  color: rgb(255, 164, 45);
+  padding: 5px;
+  background-color: white;
+  transform: translateX(-50%);
+}
+
+.about .about-content,
+.skills .skills-content,
+.my-site .my-site-content,
+.contact .contact-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
