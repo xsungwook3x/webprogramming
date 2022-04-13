@@ -17,6 +17,19 @@
     <link rel="stylesheet" href="./css/responsive.css">
 
 <body>
+    <script src="/JS/script.js"></script>
+    <script type="text/javascript" src="/post_inc/javascript/Typed.js"></script>
+    <script>
+        $(function(){
+        var typed = new Typed("#typing1",{
+        strings: ["HTML", "CSS","Java Script","REACT.js","Node.js-express","JAVA","Spring","Springboot","JPA","MYSQL"],
+        typeSpeed:100,
+        backSpeed:60,
+        loop:true
+    });
+
+    })
+    </script>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#home">Ugi's <spna>Portfolio</spna></a></div>
@@ -38,7 +51,7 @@
             <div class="home-section">
                 <div class = "text-1">Hello! My name is</div>
                 <div class="text-2">SeongUk Kim</div>
-                <div class="text-3">My skills <span class="typing1">HTML</span></div>
+                <div class="text-3">My skills <span id="typing1">JAVA</span></div>
             </div>
         </div>
     </section>
@@ -53,7 +66,9 @@
                 </div>
                 <div class="right column">
                     <div class="about-text">I'm SeongUk Kim</div>
-                    <div class="about-skills">My Skills <span class="typing2">HTML</span></div>
+                    <div class="about-text">I want to be a Backend-developer</div>
+                    <br/>
+                    <div class="about-skills">My Skills <span id="typing2">JAVA</span></div>
                     
                 </div>
             </div>
@@ -68,7 +83,13 @@
                 <div class="left column">
                     <div class="skills-text">
                         <div class="sub-title">My Skills & Experiences</div>
-                        <p>이런 저런이야기 쓰자</p>
+                        <p> 저는 EN#이라는 동아리를 통해 여러 활동 및 공모전에 나간적있으며, 현재는 CMC라는 대외활동에 참여하고 있습니다.</p>
+                        <br/>
+                        <p>
+                            저는 html, css ,JavaScript 를 배웠으며, JavaScript를 이용해서 react.js 프레임워크를 이용해 웹사이트도 구현한적있으며, 안드로이드, ios, flutter를 이용해 앱 개발 경험도 있습니다.
+                            현재는 JAVA를 딥하게 공부중에 있으며 백엔드 쪽으로 진로를 결정하여, java spring springboot jpa 및 컴퓨터 네트워크, 데이터베이스, 운영체제 등 중요한 CS 공부를 하고있습니다.
+                            시간이 지나면 코틀린으로 spring 리펙토링을 경험해보고 싶습니다.
+                        </p>
                     </div>
                 </div>
                 
@@ -122,9 +143,9 @@
                     <a href="https://velog.io/@narangke3" target="_blank">
                         <div class="site">
                             <div class="site-images">
-                                <img src="./img/blog.png" alt="">
+                                <img src="./img/velog_logo.png" alt="">
                                 <div class="site-text">BLOG</div>
-                                <p>제 블로그입니다. 이런저런 글을 썼어요</p>
+                                <p>제 개발 블로그입니다. 개발과정에서 겪었던 어려움이나, 코딩테스트 공부 혹은 CS 공부들을 정리해놓은 곳입니다.</p>
                             </div>
                         </div>
                     </a>
@@ -134,9 +155,9 @@
                     <a href="https://github.com/xsungwook3x" target="_blank">
                         <div class="site">
                             <div class="site-images">
-                                <img src="./img/github.png" alt="">
+                                <img src="./img/git.jpeg" alt="">
                                 <div class="site-text">Github</div>
-                                <p>제 github입니다. 이런저런 프로젝트를 해보았어요</p>
+                                <p>제 github입니다. 동아리 및 대외활동 또 개인 토이프로젝트 등을 저장해놓은 곳입니다.</p>
                             </div>
                         </div>
                     </a>
@@ -148,7 +169,7 @@
                             <div class="site-images">
                                 <img src="./img/web.png" alt="">
                                 <div class="site-text">Portfolio Site</div>
-                                <p>제 포트폴리오입니다.</p>
+                                <p>제 포트폴리오입니다. 앞으로 써나가고 채워나가야할 부분이 많지만 현재 열심히 노력해나가고 있답니다.</p>
                             </div>
                         </div>
                     </a>
@@ -163,6 +184,6 @@
     </footer>
 
     <!--js-->
-    <script src="/JS/script.js"></script>
+
 </body>
 </html>
