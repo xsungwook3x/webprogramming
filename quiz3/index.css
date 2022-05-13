@@ -1,0 +1,19 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: hsl(240, 0%, 57%);
+    color: hsl(209, 61%, 16%);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+#minus {
+    background-color: red;
+}
+
+#zero {
+    background-color: black;
+}
+
+#plus {
+    background-color: green;
+}
